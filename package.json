@@ -4,7 +4,7 @@
   "description": "A personal card for Richard Hess (@eswat2)",
   "main": "/bin/card.js",
   "bin": {
-    "bitandbang": "./bin/card.js"
+    "eswat2": "./bin/card.js"
   },
   "repository": {
     "type": "git",
