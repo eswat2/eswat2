@@ -17,7 +17,7 @@ const options = {
 //   opensource: chalk.white('Node.js Community Committee ') + chalk.green('⬢'),
 //   web: chalk.cyan('https://bnb.im'),
 const data = {
-  name: chalk.white.bold('              Richard Hess'),
+  name: chalk.white.bold('Richard Hess'),
   handle: chalk.cyan('eswat2'),
   work: chalk.white('Principle UI Engineer, UX/UI Engineering at Skava'),
   oss: [],
