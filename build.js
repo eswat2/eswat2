@@ -54,18 +54,18 @@ const data = {
   npx: chalk.gray('npx') + ' ' + chalk.cyan('eswat2'),
   social: socialData,
   labels: {
-    work: chalk.white.bold('       Work:'),
-    oss: chalk.white.bold('Open Source:'),
-    gmail: chalk.white.bold('      Gmail:'),
-    twitter: chalk.white.bold('    Twitter:'),
-    npm: chalk.white.bold('        npm:'),
-    github: chalk.white.bold('     GitHub:'),
-    code: chalk.white.bold('     Coding:'),
-    linkedin: chalk.white.bold('   LinkedIn:'),
     apps: chalk.white.bold('       apps:'),
-    pad: chalk.white.bold('            '),
-    web: chalk.white.bold('        Web:'),
     card: chalk.white.bold('       Card:'),
+    code: chalk.white.bold('     Coding:'),
+    github: chalk.white.bold('     GitHub:'),
+    gmail: chalk.white.bold('      Gmail:'),
+    linkedin: chalk.white.bold('   LinkedIn:'),
+    npm: chalk.white.bold('        npm:'),
+    oss: chalk.white.bold('Open Source:'),
+    pad: chalk.white.bold('            '),
+    twitter: chalk.white.bold('    Twitter:'),
+    web: chalk.white.bold('        Web:'),
+    work: chalk.white.bold('       Work:'),
   }
 }
 
