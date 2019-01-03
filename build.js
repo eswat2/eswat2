@@ -28,6 +28,9 @@ const data = {
   twitter: chalk.gray('https://twitter.com/') + chalk.cyan('eswat2'),
   npm: chalk.gray('https://npmjs.com/~') + chalk.cyan('eswat2'),
   github: chalk.gray('https://github.com/') + chalk.cyan('eswat2'),
+  code: [
+    chalk.gray('https://codesandbox.io/u/') + chalk.cyan('eswat2'),
+  ],
   linkedin: chalk.gray('https://linkedin.com/in/') + chalk.cyan('eswat'),
   web: [],
   apps: [ 
@@ -42,6 +45,7 @@ const data = {
   labelTwitter: chalk.white.bold('    Twitter:'),
   labelnpm: chalk.white.bold('        npm:'),
   labelGitHub: chalk.white.bold('     GitHub:'),
+  labelCode: chalk.white.bold('     Coding:'),
   labelLinkedIn: chalk.white.bold('   LinkedIn:'),
   labelApps: chalk.white.bold('       apps:'),
   labelPad: chalk.white.bold('            '),
@@ -69,9 +73,10 @@ const notEmpty = (array) => {
   return array && (array.length > 0)
 }
 
-const { apps, gmail, oss, web, labelApps, labelGmail, labelOss, labelPad, labelWeb } = data
+const { apps, code, gmail, oss, web, labelApps, labelCode, labelGmail, labelOss, labelPad, labelWeb } = data
 const gmailing = notEmpty(gmail) ? gmail.reduce(reducer(labelGmail, labelPad, newline), '') : undefined
 const apping = notEmpty(apps) ? apps.reduce(reducer(labelApps, labelPad, newline), '') : undefined
+const coding = notEmpty(code) ? code.reduce(reducer(labelCode, labelPad, newline), '') : undefined
 const ossing = notEmpty(oss) ? oss.reduce(reducer(labelOss, labelPad, newline), '') : undefined
 const webing = notEmpty(web) ? web.reduce(reducer(labelWeb, labelPad, newline), '') : undefined
 
@@ -85,6 +90,7 @@ const output = heading + // data.name + data.handle
                npming + newline + 
                githubing + newline + 
                linkedining + newline + 
+               (coding ? coding : '') + 
                (webing ? webing : '' ) + 
                (apping ? apping : '') +
                newline +
