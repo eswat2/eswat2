@@ -7,61 +7,79 @@ const fs = require('fs')
 const path = require('path')
 
 // Define options for Boxen
-const options = {
+const boxOptions = {
   padding: 1,
   margin: 1,
   borderStyle: 'round'
 }
 
+// NOTE:  the order of these define the order they are printed in the card...
+const tags = [ 
+  'work', 
+  'oss', 
+  'gmail', 
+  'twitter', 
+  'npm', 
+  'github', 
+  'linkedin', 
+  'code', 
+  'web', 
+  'apps',
+]
+
+// NOTE:  initialize the socialData arrays...
+const socialData = tags.reduce((obj, tag) => { obj[tag] = []; return obj}, {})
+
 // Text + chalk definitions
-//   opensource: chalk.white('Node.js Community Committee ') + chalk.green('⬢'),
+//   oss: chalk.white('Node.js Community Committee ') + chalk.green('⬢'),
 //   web: chalk.cyan('https://bnb.im'),
+//
+// NOTE:  you push your specific data into the socialData arrays...
+//
+socialData.work.push(chalk.white('Principle UI Engineer, UX/UI Engineering at Skava'))
+socialData.gmail.push(chalk.cyan('eswat2') + chalk.gray('@gmail.com'))
+socialData.gmail.push(chalk.cyan('eswat42') + chalk.gray('@gmail.com'))
+socialData.twitter.push(chalk.gray('https://twitter.com/') + chalk.cyan('eswat2'))
+socialData.npm.push(chalk.gray('https://npmjs.com/~') + chalk.cyan('eswat2'))
+socialData.github.push(chalk.gray('https://github.com/') + chalk.cyan('eswat2'))
+socialData.code.push(chalk.gray('https://codesandbox.io/u/') + chalk.cyan('eswat2'))
+socialData.linkedin.push(chalk.gray('https://linkedin.com/in/') + chalk.cyan('eswat'))
+socialData.apps.push(chalk.magenta('https://funnel-gfx.herokuapp.com/'))
+socialData.apps.push(chalk.magenta('https://fire-notes.herokuapp.com/'))
+socialData.apps.push(chalk.magenta('https://git-notes.herokuapp.com/'))
+
 const data = {
   name: chalk.white.bold('Richard Hess'),
   handle: chalk.cyan('eswat2'),
-  work: chalk.white('Principle UI Engineer, UX/UI Engineering at Skava'),
-  oss: [],
-  gmail: [
-    chalk.cyan('eswat2') + chalk.gray('@gmail.com'),
-    chalk.cyan('eswat42') + chalk.gray('@gmail.com'),
-  ],
-  twitter: chalk.gray('https://twitter.com/') + chalk.cyan('eswat2'),
-  npm: chalk.gray('https://npmjs.com/~') + chalk.cyan('eswat2'),
-  github: chalk.gray('https://github.com/') + chalk.cyan('eswat2'),
-  code: [
-    chalk.gray('https://codesandbox.io/u/') + chalk.cyan('eswat2'),
-  ],
-  linkedin: chalk.gray('https://linkedin.com/in/') + chalk.cyan('eswat'),
-  web: [],
-  apps: [ 
-    chalk.magenta('https://funnel-gfx.herokuapp.com/'),
-    chalk.magenta('https://fire-notes.herokuapp.com/'),
-    chalk.magenta('https://git-notes.herokuapp.com/'), 
-  ],
   npx: chalk.gray('npx') + ' ' + chalk.cyan('eswat2'),
-  labelWork: chalk.white.bold('       Work:'),
-  labelOss: chalk.white.bold('Open Source:'),
-  labelGmail: chalk.white.bold('      Gmail:'),
-  labelTwitter: chalk.white.bold('    Twitter:'),
-  labelnpm: chalk.white.bold('        npm:'),
-  labelGitHub: chalk.white.bold('     GitHub:'),
-  labelCode: chalk.white.bold('     Coding:'),
-  labelLinkedIn: chalk.white.bold('   LinkedIn:'),
-  labelApps: chalk.white.bold('       apps:'),
-  labelPad: chalk.white.bold('            '),
-  labelWeb: chalk.white.bold('        Web:'),
-  labelCard: chalk.white.bold('       Card:')
+  social: socialData,
+  labels: {
+    work: chalk.white.bold('       Work:'),
+    oss: chalk.white.bold('Open Source:'),
+    gmail: chalk.white.bold('      Gmail:'),
+    twitter: chalk.white.bold('    Twitter:'),
+    npm: chalk.white.bold('        npm:'),
+    github: chalk.white.bold('     GitHub:'),
+    code: chalk.white.bold('     Coding:'),
+    linkedin: chalk.white.bold('   LinkedIn:'),
+    apps: chalk.white.bold('       apps:'),
+    pad: chalk.white.bold('            '),
+    web: chalk.white.bold('        Web:'),
+    card: chalk.white.bold('       Card:'),
+  }
 }
+
+const { name, handle, npx } = data
+const { card, pad } = data.labels
 
 // Actual strings we're going to output
 const newline = '\n'
-const heading = `${data.name} - ${data.handle}`
-const working = `${data.labelWork}  ${data.work}`
-const twittering = `${data.labelTwitter}  ${data.twitter}`
-const npming = `${data.labelnpm}  ${data.npm}`
-const githubing = `${data.labelGitHub}  ${data.github}`
-const linkedining = `${data.labelLinkedIn}  ${data.linkedin}`
-const carding = `${data.labelCard}  ${data.npx}`
+const heading = `${name} - ${handle}`
+const carding = `${card}  ${npx}`
+
+const notEmpty = (array) => {
+  return array && (array.length > 0)
+}
 
 const reducer = (label, pad, newline) => {
   return (prev, current, indx) => {
@@ -69,31 +87,19 @@ const reducer = (label, pad, newline) => {
   }
 }
 
-const notEmpty = (array) => {
-  return array && (array.length > 0)
-}
-
-const { apps, code, gmail, oss, web, labelApps, labelCode, labelGmail, labelOss, labelPad, labelWeb } = data
-const gmailing = notEmpty(gmail) ? gmail.reduce(reducer(labelGmail, labelPad, newline), '') : undefined
-const apping = notEmpty(apps) ? apps.reduce(reducer(labelApps, labelPad, newline), '') : undefined
-const coding = notEmpty(code) ? code.reduce(reducer(labelCode, labelPad, newline), '') : undefined
-const ossing = notEmpty(oss) ? oss.reduce(reducer(labelOss, labelPad, newline), '') : undefined
-const webing = notEmpty(web) ? web.reduce(reducer(labelWeb, labelPad, newline), '') : undefined
+const items = tags.map((tag) => {
+  const list = data.social[tag]
+  const label = data.labels[tag]
+  return notEmpty(list) ? list.reduce(reducer(label, pad, newline), '') : ''
+})
 
 // Put all our output together into a single variable so we can use boxen effectively
 const output = heading + // data.name + data.handle
                newline + newline + // Add one whole blank line
-               working + newline +
-               (ossing ? ossing + newline : '') +
-               (gmailing ? gmailing : '') + 
-               twittering + newline + 
-               npming + newline + 
-               githubing + newline + 
-               linkedining + newline + 
-               (coding ? coding : '') + 
-               (webing ? webing : '' ) + 
-               (apping ? apping : '') +
+               items.reduce((prev, item) => {
+                 return prev + item
+               }, '') +
                newline +
                carding
 
-fs.writeFileSync(path.join(__dirname, 'bin/output'), chalk.green(boxen(output, options)))
+fs.writeFileSync(path.join(__dirname, 'bin/output'), chalk.green(boxen(output, boxOptions)))
