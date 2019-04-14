@@ -36,7 +36,7 @@ const socialData = tags.reduce((obj, tag) => { obj[tag] = []; return obj}, {})
 //
 // NOTE:  you push your specific data into the socialData arrays...
 //
-socialData.work.push(chalk.white('Principle UI Engineer, UX/UI Engineering at Skava'))
+socialData.work.push(chalk.white('Principle UI Engineer, UX/UI Engineering'))
 socialData.gmail.push(chalk.cyan('eswat2') + chalk.gray('@gmail.com'))
 socialData.gmail.push(chalk.cyan('eswat42') + chalk.gray('@gmail.com'))
 socialData.twitter.push(chalk.gray('https://twitter.com/') + chalk.cyan('eswat2'))
