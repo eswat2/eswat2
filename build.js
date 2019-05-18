@@ -22,6 +22,7 @@ const tags = [
   'npm', 
   'github', 
   'linkedin', 
+  'angel',
   'code', 
   'web', 
   'apps',
@@ -45,6 +46,7 @@ socialData.github.push(chalk.gray('https://github.com/') + chalk.cyan('eswat2'))
 socialData.github.push(chalk.gray('https://') + chalk.cyan('eswat2') + chalk.gray('.github.io'))
 socialData.code.push(chalk.gray('https://codesandbox.io/u/') + chalk.cyan('eswat2'))
 socialData.linkedin.push(chalk.gray('https://linkedin.com/in/') + chalk.cyan('eswat'))
+socialData.angel.push(chalk.gray('https://angel.co/') + chalk.cyan('eswat2'))
 socialData.apps.push(chalk.magenta('https://funnel-gfx.herokuapp.com/'))
 socialData.apps.push(chalk.magenta('https://fire-notes.herokuapp.com/'))
 socialData.apps.push(chalk.magenta('https://git-notes.herokuapp.com/'))
@@ -55,6 +57,7 @@ const data = {
   npx: chalk.gray('npx') + ' ' + chalk.cyan('eswat2'),
   social: socialData,
   labels: {
+    angel: chalk.white.bold('   AngelList:'),
     apps: chalk.white.bold('        apps:'),
     card: chalk.white.bold('        Card:'),
     code: chalk.white.bold('      Coding:'),
