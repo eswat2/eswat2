@@ -13,9 +13,9 @@
   "scripts": {
     "prepublish": "npm run build",
     "build": "node build.js",
+    "test": "mocha",
     "dev": "npm run build && node ./bin/card.js",
-    "lint": "standard",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "standard"
   },
   "keywords": [
     "card",
@@ -34,6 +34,8 @@
   "devDependencies": {
     "boxen": "4.1.0",
     "chalk": "2.4.2",
+    "mocha": "6.2.0",
+    "sinon": "7.3.2",
     "standard": "13.1.0"
   }
 }
