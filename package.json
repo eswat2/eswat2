@@ -11,10 +11,11 @@
     "url": "https://github.com/eswat2/eswat2.git"
   },
   "scripts": {
-    "prepublish": "npm run build",
+    "prepublish": "yarn build",
     "build": "node build.js",
     "test": "mocha",
-    "dev": "npm run build && node ./bin/card.js",
+    "dev": "yarn build && node ./bin/card.js",
+    "deploy": "yarn publish",
     "lint": "standard"
   },
   "keywords": [
