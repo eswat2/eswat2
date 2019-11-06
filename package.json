@@ -16,7 +16,8 @@
     "test": "mocha",
     "dev": "yarn build && node ./bin/card.js",
     "deploy": "yarn publish",
-    "lint": "standard"
+    "lint": "standard",
+    "open": "npx eswat2"
   },
   "keywords": [
     "card",
