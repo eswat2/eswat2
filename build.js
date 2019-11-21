@@ -58,10 +58,11 @@ socialData.linkedin.push(
   chalk.gray("https://linkedin.com/in/") + chalk.cyan("eswat")
 )
 socialData.angel.push(chalk.gray("https://angel.co/") + chalk.cyan("eswat2"))
+socialData.apps.push(chalk.magenta("https://eswat2.github.io/CRA-Social-Icons"))
 socialData.apps.push(chalk.magenta("https://eswat2.github.io/auto-gql"))
 socialData.apps.push(chalk.magenta("https://eswat2.github.io/funnel-gfx"))
+socialData.apps.push(chalk.magenta("https://eswat2.github.io/git-notes"))
 socialData.apps.push(chalk.magenta("https://fire-notes.herokuapp.com"))
-socialData.apps.push(chalk.magenta("https://git-notes.herokuapp.com"))
 
 const data = {
   name: chalk.white.bold("Richard Hess"),
