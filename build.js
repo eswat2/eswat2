@@ -65,6 +65,10 @@ socialData.apps.push(chalk.magenta("https://fire-notes.herokuapp.com"))
 socialData.apps.push(chalk.magenta("https://funnel-r3t.eswat2.now.sh"))
 socialData.apps.push(chalk.magenta("https://funnel-s4e.eswat2.now.sh"))
 socialData.apps.push(chalk.magenta("https://funnel-vue.eswat2.now.sh"))
+socialData.apps.push(chalk.magenta("https://gt-sports.eswat2.now.sh"))
+socialData.apps.push(chalk.magenta("https://s4e-autos.eswat2.now.sh"))
+socialData.apps.push(chalk.magenta("https://s4e-ikon-proofs.eswat2.now.sh"))
+socialData.apps.push(chalk.magenta("https://s4e-proofs.eswat2.now.sh"))
 
 const data = {
   name: chalk.white.bold("Richard Hess"),
