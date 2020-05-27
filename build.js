@@ -10,7 +10,7 @@ const path = require("path")
 const boxOptions = {
   padding: 1,
   margin: 1,
-  borderStyle: "round"
+  borderStyle: "round",
 }
 
 // NOTE:  the order of these define the order they are printed in the card...
@@ -25,7 +25,7 @@ const tags = [
   "angel",
   "code",
   "web",
-  "apps"
+  "apps",
 ]
 
 // NOTE:  initialize the socialData arrays...
@@ -57,7 +57,7 @@ socialData.code.push(
   chalk.gray("https://codesandbox.io/u/") + chalk.cyan("eswat2")
 )
 socialData.linkedin.push(
-  chalk.gray("https://linkedin.com/in/") + chalk.cyan("eswat")
+  chalk.gray("https://www.linkedin.com/in/") + chalk.cyan("eswat")
 )
 socialData.angel.push(chalk.gray("https://angel.co/") + chalk.cyan("eswat2"))
 socialData.apps.push(chalk.magenta("https://eswat2.github.io/CRA-Social-Icons"))
@@ -90,8 +90,8 @@ const data = {
     pad: chalk.white.bold("             "),
     twitter: chalk.white.bold("     Twitter:"),
     web: chalk.white.bold("         Web:"),
-    work: chalk.white.bold("        Work:")
-  }
+    work: chalk.white.bold("        Work:"),
+  },
 }
 
 const { name, handle, npx } = data
@@ -102,7 +102,7 @@ const newline = "\n"
 const heading = `${name} - ${handle}`
 const carding = `${card}  ${npx}`
 
-const notEmpty = array => {
+const notEmpty = (array) => {
   return array && array.length > 0
 }
 
@@ -112,7 +112,7 @@ const reducer = (label, pad, newline) => {
   }
 }
 
-const items = tags.map(tag => {
+const items = tags.map((tag) => {
   const list = data.social[tag]
   const label = data.labels[tag]
   return notEmpty(list) ? list.reduce(reducer(label, pad, newline), "") : ""
