@@ -1,8 +1,8 @@
 ![banner][my-abstract]
 
-# Richard Hess
+## Richard Hess
 
-Experienced software developer with a passion for creating User Interfaces (_Atomic Design, Vue, React, GraphQL_). I am currently working as a **UI Technical Architect** exploring Micro Frontend technologies.
+Experienced software developer with a passion for creating User Interfaces (_Atomic Design, Svelte, Vue, React, GraphQL_). I am currently working as a **UI Technical Architect** exploring Micro Frontend technologies.
 
 - [My Github Page][my-github] **
 
