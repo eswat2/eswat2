@@ -1,9 +1,18 @@
-It's me, Richard!
+![banner][my-abstract]
 
-# Usage
-Via npx:
+# Richard Hess
+
+Experienced software developer with a passion for creating User Interfaces (_Atomic Design, Vue, React, GraphQL_). I am currently working as a **UI Technical Architect** exploring Micro Frontend technologies.
+
+- [My Github Page][my-github] **
+
+my npx business card:
+
 ```
 npx eswat2
 ```
 
-Not including how to use it globally because I'm not sure why you'd want this as a global command. That'd be creepy.
+[my-github]: https://eswat2.github.io
+[my-abstract]: images/Abstract-Art-l.jpg
+
+
