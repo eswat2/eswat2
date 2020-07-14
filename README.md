@@ -13,6 +13,6 @@ npx eswat2
 ```
 
 [my-github]: https://eswat2.github.io
-[my-abstract]: images/Abstract-Art-l.jpg
+[my-abstract]: https://eswat2.github.io/images/Abstract-Art-l.jpg
 
 
