@@ -511,10 +511,10 @@ eslint-config-standard-jsx@9.0.0:
   resolved "https://registry.yarnpkg.com/eslint-config-standard-jsx/-/eslint-config-standard-jsx-9.0.0.tgz#a65d879157406e74a3be53201882d471bbda05ff"
   integrity sha512-e9ezaClB5YdTYqGUd3wReKC1si8XRn234tmME+3qebQ+KHtH92B6dr4LE6qPjK9AYe9XfwDK/xgQSwyCKQwv5Q==
 
-eslint-config-standard@15.0.0:
-  version "15.0.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-standard/-/eslint-config-standard-15.0.0.tgz#459f823b47ac0541b0a22b1d0a161a9da543f687"
-  integrity sha512-MZ8KRhUJLtMbjQo9PsEzFG29vqbQJfLoLBHrTaAaFMtDx9PIm1GZgyUanOLgf1xOE1aWrtZZSbxBYCy8dJCCBg==
+eslint-config-standard@15.0.1:
+  version "15.0.1"
+  resolved "https://registry.yarnpkg.com/eslint-config-standard/-/eslint-config-standard-15.0.1.tgz#1262eafaba66f4f03fdf3cf655a28aa8b40868b7"
+  integrity sha512-UGorkix49kBium7Y124o2U9Qy7Lpa+nO0FsaqQSIPeno5hGNxZtSBJbqJX6gtpYfDFWCtqCAN9wyK+oDd9jT7Q==
 
 eslint-import-resolver-node@^0.3.4:
   version "0.3.4"
@@ -1576,9 +1576,9 @@ rimraf@2.6.3:
     glob "^7.1.3"
 
 run-parallel@^1.1.2:
-  version "1.1.9"
-  resolved "https://registry.yarnpkg.com/run-parallel/-/run-parallel-1.1.9.tgz#c9dd3a7cf9f4b2c4b6244e173a6ed866e61dd679"
-  integrity sha512-DEqnSRTDw/Tc3FXf49zedI638Z9onwUotBMiUFKmrO2sdFKIbXamXGQ3Axd4qgphxKB4kw/qP1w5kTxnfU1B9Q==
+  version "1.1.10"
+  resolved "https://registry.yarnpkg.com/run-parallel/-/run-parallel-1.1.10.tgz#60a51b2ae836636c81377df16cb107351bcd13ef"
+  integrity sha512-zb/1OuZ6flOlH6tQyMPUrE3x3Ulxjlo9WIVXR4yVYi4H9UXQaeIsPbLn2R3O3vQCnDKkAl2qHiuocKKX4Tz/Sw==
 
 safe-buffer@^5.1.0:
   version "5.2.1"
@@ -1632,10 +1632,10 @@ side-channel@^1.0.2:
     es-abstract "^1.18.0-next.0"
     object-inspect "^1.8.0"
 
-sinon@9.2.0:
-  version "9.2.0"
-  resolved "https://registry.yarnpkg.com/sinon/-/sinon-9.2.0.tgz#1d333967e30023609f7347351ebc0dc964c0f3c9"
-  integrity sha512-eSNXz1XMcGEMHw08NJXSyTHIu6qTCOiN8x9ODACmZpNQpr0aXTBXBnI4xTzQzR+TEpOmLiKowGf9flCuKIzsbw==
+sinon@9.2.1:
+  version "9.2.1"
+  resolved "https://registry.yarnpkg.com/sinon/-/sinon-9.2.1.tgz#64cc88beac718557055bd8caa526b34a2231be6d"
+  integrity sha512-naPfsamB5KEE1aiioaoqJ6MEhdUs/2vtI5w1hPAXX/UwvoPjXcwh1m5HiKx0HGgKR8lQSoFIgY5jM6KK8VrS9w==
   dependencies:
     "@sinonjs/commons" "^1.8.1"
     "@sinonjs/fake-timers" "^6.0.1"
@@ -1695,13 +1695,13 @@ standard-engine@^12.1.0:
     minimist "^1.2.5"
     pkg-conf "^3.1.0"
 
-standard@15.0.0:
-  version "15.0.0"
-  resolved "https://registry.yarnpkg.com/standard/-/standard-15.0.0.tgz#4a07c6c9dc56830a89e3b1ab2221dee33f5a56a9"
-  integrity sha512-VoyBbvaC6r+PO/M+PMh8J6Ie7eOf1xpk6comMg0tq+O4XUSzGsnFgV2yMnmDu90BMjR2ro4w1nxPe63Hr1e4Yg==
+standard@15.0.1:
+  version "15.0.1"
+  resolved "https://registry.yarnpkg.com/standard/-/standard-15.0.1.tgz#c81204c7c91521f96188fea34abda287cb38d612"
+  integrity sha512-iMBSYGe/dhCPjK9Gwh0X7d4S88Mk1ty3HmZkq0A0PBbr30qfKMswraMvQVrdhMoUjVkVbBsjbjX0zV6OQl7WbQ==
   dependencies:
     eslint "~7.11.0"
-    eslint-config-standard "15.0.0"
+    eslint-config-standard "15.0.1"
     eslint-config-standard-jsx "9.0.0"
     eslint-plugin-import "~2.22.1"
     eslint-plugin-node "~11.1.0"
@@ -1820,9 +1820,9 @@ table@^5.2.3:
     string-width "^3.0.0"
 
 term-size@^2.1.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/term-size/-/term-size-2.2.0.tgz#1f16adedfe9bdc18800e1776821734086fcc6753"
-  integrity sha512-a6sumDlzyHVJWb8+YofY4TW112G6p2FCPEAFk+59gIYHv3XHRhm9ltVQ9kli4hNWeQBwSpe8cRN25x0ROunMOw==
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/term-size/-/term-size-2.2.1.tgz#2a6a54840432c2fb6320fea0f415531e90189f54"
+  integrity sha512-wK0Ri4fOGjv/XPy8SBHZChl8CM7uMc5VML7SqiQ0zG7+J5Vr+RMQDoHa2CNT6KHUnTGIXH34UDMkPzAUyapBZg==
 
 text-table@^0.2.0:
   version "0.2.0"
@@ -1881,9 +1881,9 @@ uri-js@^4.2.2:
     punycode "^2.1.0"
 
 v8-compile-cache@^2.0.3:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/v8-compile-cache/-/v8-compile-cache-2.1.1.tgz#54bc3cdd43317bca91e35dcaf305b1a7237de745"
-  integrity sha512-8OQ9CL+VWyt3JStj7HX7/ciTL2V3Rl1Wf5OL+SNTm0yK1KvtReVulksyeRnCANHHuUxHlQig+JJDlUhBt1NQDQ==
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/v8-compile-cache/-/v8-compile-cache-2.2.0.tgz#9471efa3ef9128d2f7c6a7ca39c4dd6b5055b132"
+  integrity sha512-gTpR5XQNKFwOd4clxfnhaqvfqMpqEwr4tOtCyz4MtYZX2JYhfr1JvBFKdS+7K/9rfpZR3VLX+YWBbKoxCgS43Q==
 
 validate-npm-package-license@^3.0.1:
   version "3.0.4"
