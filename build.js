@@ -72,6 +72,8 @@ socialData.apps.push(chalk.magenta("https://gt-sports.eswat2.now.sh"))
 socialData.apps.push(chalk.magenta("https://s4e-autos.eswat2.now.sh"))
 socialData.apps.push(chalk.magenta("https://s4e-ikon-proofs.eswat2.now.sh"))
 socialData.apps.push(chalk.magenta("https://s4e-proofs.eswat2.now.sh"))
+socialData.apps.push(chalk.magenta("https://wc-funnel.vercel.app"))
+socialData.apps.push(chalk.magenta("https://wc-proofs.vercel.app"))
 
 const data = {
   name: chalk.white.bold("Richard Hess"),
