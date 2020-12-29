@@ -34,7 +34,7 @@
     "bin/output"
   ],
   "devDependencies": {
-    "boxen": "4.2.0",
+    "boxen": "5.0.0",
     "chalk": "4.1.0",
     "mocha": "8.2.1",
     "sinon": "9.2.2",
