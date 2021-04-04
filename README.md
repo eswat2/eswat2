@@ -12,6 +12,8 @@ my npx business card:
 npx eswat2
 ```
 
+[![npm version](https://badge.fury.io/js/eswat2.svg)](//npmjs.com/package/eswat2)
+
 [my-github]: https://eswat2.github.io
 [my-abstract]: https://eswat2.github.io/images/Vehicles-McLaren-l.jpg
 
