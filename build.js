@@ -24,6 +24,7 @@ const tags = [
   "linkedin",
   "angel",
   "code",
+  "domains",
   "web",
   "apps",
 ]
@@ -54,6 +55,11 @@ socialData.github.push(chalk.gray("https://github.com/") + chalk.cyan("eswat2"))
 socialData.github.push(
   chalk.gray("https://") + chalk.cyan("eswat2") + chalk.gray(".github.io")
 )
+
+socialData.domains.push(chalk.green("eswat2.dev"))
+socialData.domains.push(chalk.green("eswat42.dev"))
+socialData.domains.push(chalk.green("richardhess.dev"))
+
 socialData.code.push(
   chalk.gray("https://codesandbox.io/u/") + chalk.cyan("eswat2")
 )
@@ -85,6 +91,7 @@ const data = {
     apps: chalk.white.bold("        apps:"),
     card: chalk.white.bold("        Card:"),
     code: chalk.white.bold("      Coding:"),
+    domains: chalk.white.bold("     Domains:"),
     github: chalk.white.bold("      GitHub:"),
     gmail: chalk.white.bold("       Gmail:"),
     linkedin: chalk.white.bold("    LinkedIn:"),
