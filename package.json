@@ -36,7 +36,7 @@
   "devDependencies": {
     "boxen": "5.0.1",
     "chalk": "4.1.1",
-    "mocha": "8.3.2",
+    "mocha": "8.4.0",
     "sinon": "10.0.0",
     "standard": "16.0.3"
   }
