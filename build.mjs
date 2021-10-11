@@ -1,10 +1,10 @@
-"use strict"
+import chalk from "chalk"
+import boxen from "boxen"
 
-// Pull in our modules
-const chalk = require("chalk")
-const boxen = require("boxen")
-const fs = require("fs")
-const path = require("path")
+import fs from 'fs'
+import path from 'path'
+
+const __dirname = path.resolve();
 
 // Define options for Boxen
 const boxOptions = {
