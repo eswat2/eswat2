@@ -14,10 +14,7 @@ npx eswat2
 
 [![npm version](https://badge.fury.io/js/eswat2.svg)](//npmjs.com/package/eswat2)
 
-[![GitHub Streak](http://github-readme-streak-stats.herokuapp.com?user=eswat2&theme=highcontrast&date_format=%5BY.%5Dn.j)](https://git.io/streak-stats)
-
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=eswat2&layout=compact&theme=vision-friendly-dark)](https://github.com/anuraghazra/github-readme-stats)
-
+[![GitHub Streak](http://github-readme-streak-stats.herokuapp.com?user=eswat2&theme=ads-juicy-fresh&date_format=%5BY.%5Dn.j)](https://git.io/streak-stats)
 
 [my-github]: https://eswat2.github.io
 [my-abstract]: https://eswat2.github.io/images/Vehicles-McLaren-l.jpg
