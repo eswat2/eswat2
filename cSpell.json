@@ -5,7 +5,7 @@
   // language - current active spelling language
   "language": "en",
   // words - list of words to be always considered correct
-  "words": ["clrs", "eswat", "linkedin", "picocolors"],
+  "words": ["clrs", "eswat", "linkedin", "pico", "picocolors"],
   "ignorePaths": [
     "cSpell.json",
     "dist/**",
