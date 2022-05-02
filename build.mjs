@@ -1,4 +1,4 @@
-import chalk from "chalk"
+import pico from "picocolors"
 import boxen from "boxen"
 
 import fs from 'fs'
@@ -35,73 +35,73 @@ const socialData = tags.reduce((obj, tag) => {
   return obj
 }, {})
 
-// Text + chalk definitions
-//   oss: chalk.white('Node.js Community Committee ') + chalk.green('⬢'),
-//   web: chalk.cyan('https://bnb.im'),
+// Text + pico definitions
+//   oss: pico.white('Node.js Community Committee ') + pico.green('⬢'),
+//   web: pico.cyan('https://bnb.im'),
 //
 // NOTE:  you push your specific data into the socialData arrays...
 //
-socialData.work.push(chalk.white("Portfolio Technical Architect - UI/UX"))
-socialData.work.push(chalk.white("Lead Technical Architect - UI"))
-socialData.work.push(chalk.white("Lead Software Engineer - UI"))
-socialData.work.push(chalk.white("UX/UI Engineering"))
-socialData.gmail.push(chalk.cyan("eswat2") + chalk.gray("@gmail.com"))
-socialData.gmail.push(chalk.cyan("eswat42") + chalk.gray("@gmail.com"))
+socialData.work.push(pico.white("Portfolio Technical Architect - UI/UX"))
+socialData.work.push(pico.white("Lead Technical Architect - UI"))
+socialData.work.push(pico.white("Lead Software Engineer - UI"))
+socialData.work.push(pico.white("UX/UI Engineering"))
+socialData.gmail.push(pico.cyan("eswat2") + pico.gray("@gmail.com"))
+socialData.gmail.push(pico.cyan("eswat42") + pico.gray("@gmail.com"))
 socialData.twitter.push(
-  chalk.gray("https://twitter.com/") + chalk.cyan("eswat2")
+  pico.gray("https://twitter.com/") + pico.cyan("eswat2")
 )
-socialData.npm.push(chalk.gray("https://npmjs.com/~") + chalk.cyan("eswat2"))
-socialData.github.push(chalk.gray("https://github.com/") + chalk.cyan("eswat2"))
+socialData.npm.push(pico.gray("https://npmjs.com/~") + pico.cyan("eswat2"))
+socialData.github.push(pico.gray("https://github.com/") + pico.cyan("eswat2"))
 socialData.github.push(
-  chalk.gray("https://") + chalk.cyan("eswat2") + chalk.gray(".github.io")
+  pico.gray("https://") + pico.cyan("eswat2") + pico.gray(".github.io")
 )
 
-socialData.domains.push(chalk.green("eswat2.dev"))
-socialData.domains.push(chalk.green("eswat42.dev"))
-socialData.domains.push(chalk.green("richardhess.dev"))
+socialData.domains.push(pico.green("eswat2.dev"))
+socialData.domains.push(pico.green("eswat42.dev"))
+socialData.domains.push(pico.green("richardhess.dev"))
 
 socialData.code.push(
-  chalk.gray("https://codesandbox.io/u/") + chalk.cyan("eswat2")
+  pico.gray("https://codesandbox.io/u/") + pico.cyan("eswat2")
 )
 socialData.linkedin.push(
-  chalk.gray("https://www.linkedin.com/in/") + chalk.cyan("eswat")
+  pico.gray("https://www.linkedin.com/in/") + pico.cyan("eswat")
 )
-socialData.angel.push(chalk.gray("https://angel.co/") + chalk.cyan("eswat2"))
-socialData.apps.push(chalk.magenta("https://eswat2.github.io/auto-gql"))
-socialData.apps.push(chalk.magenta("https://fire-notes.herokuapp.com"))
-socialData.apps.push(chalk.magenta("https://funnel-r3t.vercel.app"))
-socialData.apps.push(chalk.magenta("https://funnel-s4e.vercel.app"))
-socialData.apps.push(chalk.magenta("https://funnel-sld.vercel.app"))
-socialData.apps.push(chalk.magenta("https://funnel-vue.vercel.app"))
-socialData.apps.push(chalk.magenta("https://git-notes-eswat2.vercel.app"))
-socialData.apps.push(chalk.magenta("https://s4e-autos.vercel.app"))
-socialData.apps.push(chalk.magenta("https://s4e-ikon-proofs.vercel.app"))
-socialData.apps.push(chalk.magenta("https://s4e-proofs.vercel.app"))
-socialData.apps.push(chalk.magenta("https://wc-autos.vercel.app"))
-socialData.apps.push(chalk.magenta("https://wc-funnel.vercel.app"))
-socialData.apps.push(chalk.magenta("https://wc-proofs.vercel.app"))
-socialData.apps.push(chalk.magenta("https://wc-sudoku.vercel.app"))
+socialData.angel.push(pico.gray("https://angel.co/") + pico.cyan("eswat2"))
+socialData.apps.push(pico.magenta("https://eswat2.github.io/auto-gql"))
+socialData.apps.push(pico.magenta("https://fire-notes.herokuapp.com"))
+socialData.apps.push(pico.magenta("https://funnel-r3t.vercel.app"))
+socialData.apps.push(pico.magenta("https://funnel-s4e.vercel.app"))
+socialData.apps.push(pico.magenta("https://funnel-sld.vercel.app"))
+socialData.apps.push(pico.magenta("https://funnel-vue.vercel.app"))
+socialData.apps.push(pico.magenta("https://git-notes-eswat2.vercel.app"))
+socialData.apps.push(pico.magenta("https://s4e-autos.vercel.app"))
+socialData.apps.push(pico.magenta("https://s4e-ikon-proofs.vercel.app"))
+socialData.apps.push(pico.magenta("https://s4e-proofs.vercel.app"))
+socialData.apps.push(pico.magenta("https://wc-autos.vercel.app"))
+socialData.apps.push(pico.magenta("https://wc-funnel.vercel.app"))
+socialData.apps.push(pico.magenta("https://wc-proofs.vercel.app"))
+socialData.apps.push(pico.magenta("https://wc-sudoku.vercel.app"))
 
 const data = {
-  name: chalk.white.bold("Richard Hess"),
-  handle: chalk.cyan("eswat2"),
-  npx: chalk.gray("npx") + " " + chalk.cyan("eswat2"),
+  name: pico.white(pico.bold("Richard Hess")),
+  handle: pico.cyan("eswat2"),
+  npx: pico.gray("npx") + " " + pico.cyan("eswat2"),
   social: socialData,
   labels: {
-    angel: chalk.white.bold("   AngelList:"),
-    apps: chalk.white.bold("        apps:"),
-    card: chalk.white.bold("        Card:"),
-    code: chalk.white.bold("      Coding:"),
-    domains: chalk.white.bold("     Domains:"),
-    github: chalk.white.bold("      GitHub:"),
-    gmail: chalk.white.bold("       Gmail:"),
-    linkedin: chalk.white.bold("    LinkedIn:"),
-    npm: chalk.white.bold("         npm:"),
-    oss: chalk.white.bold(" Open Source:"),
-    pad: chalk.white.bold("             "),
-    twitter: chalk.white.bold("     Twitter:"),
-    web: chalk.white.bold("         Web:"),
-    work: chalk.white.bold("        Work:"),
+    angel: pico.white(pico.bold("   AngelList:")),
+    apps: pico.white(pico.bold("        apps:")),
+    card: pico.white(pico.bold("        Card:")),
+    code: pico.white(pico.bold("      Coding:")),
+    domains: pico.white(pico.bold("     Domains:")),
+    github: pico.white(pico.bold("      GitHub:")),
+    gmail: pico.white(pico.bold("       Gmail:")),
+    linkedin: pico.white(pico.bold("    LinkedIn:")),
+    npm: pico.white(pico.bold("         npm:")),
+    oss: pico.white(pico.bold(" Open Source:")),
+    pad: pico.white(pico.bold("             ")),
+    twitter: pico.white(pico.bold("     Twitter:")),
+    web: pico.white(pico.bold("         Web:")),
+    work: pico.white(pico.bold("        Work:")),
   },
 }
 
@@ -142,5 +142,5 @@ const output =
 
 fs.writeFileSync(
   path.join(__dirname, "bin/output"),
-  chalk.green(boxen(output, boxOptions))
+  pico.green(boxen(output, boxOptions))
 )
