@@ -1,12 +1,14 @@
 import boxen from "boxen"
 import pico from "picocolors"
 
-import fs from 'fs'
-import path from 'path'
+import fs from "fs"
+import path from "path"
 
-const __dirname = path.resolve();
+const __dirname = path.resolve()
 
 const { white, cyan, gray, green, magenta, bold } = pico.createColors()
+
+const whiteBold = (label) => white(bold(label))
 
 // Define options for Boxen
 const boxOptions = {
@@ -49,25 +51,17 @@ socialData.work.push(white("Lead Software Engineer - UI"))
 socialData.work.push(white("UX/UI Engineering"))
 socialData.gmail.push(cyan("eswat2") + gray("@gmail.com"))
 socialData.gmail.push(cyan("eswat42") + gray("@gmail.com"))
-socialData.twitter.push(
-  gray("https://twitter.com/") + cyan("eswat2")
-)
+socialData.twitter.push(gray("https://twitter.com/") + cyan("eswat2"))
 socialData.npm.push(gray("https://npmjs.com/~") + cyan("eswat2"))
 socialData.github.push(gray("https://github.com/") + cyan("eswat2"))
-socialData.github.push(
-  gray("https://") + cyan("eswat2") + gray(".github.io")
-)
+socialData.github.push(gray("https://") + cyan("eswat2") + gray(".github.io"))
 
 socialData.domains.push(green("eswat2.dev"))
 socialData.domains.push(green("eswat42.dev"))
 socialData.domains.push(green("richardhess.dev"))
 
-socialData.code.push(
-  gray("https://codesandbox.io/u/") + cyan("eswat2")
-)
-socialData.linkedin.push(
-  gray("https://www.linkedin.com/in/") + cyan("eswat")
-)
+socialData.code.push(gray("https://codesandbox.io/u/") + cyan("eswat2"))
+socialData.linkedin.push(gray("https://www.linkedin.com/in/") + cyan("eswat"))
 socialData.angel.push(gray("https://angel.co/") + cyan("eswat2"))
 socialData.apps.push(magenta("https://eswat2.github.io/auto-gql"))
 socialData.apps.push(magenta("https://fire-notes.herokuapp.com"))
@@ -85,25 +79,25 @@ socialData.apps.push(magenta("https://wc-proofs.vercel.app"))
 socialData.apps.push(magenta("https://wc-sudoku.vercel.app"))
 
 const data = {
-  name: white(bold("Richard Hess")),
+  name: whiteBold("Richard Hess"),
   handle: cyan("eswat2"),
   npx: gray("npx") + " " + cyan("eswat2"),
   social: socialData,
   labels: {
-    angel: white(bold("   AngelList:")),
-    apps: white(bold("        apps:")),
-    card: white(bold("        Card:")),
-    code: white(bold("      Coding:")),
-    domains: white(bold("     Domains:")),
-    github: white(bold("      GitHub:")),
-    gmail: white(bold("       Gmail:")),
-    linkedin: white(bold("    LinkedIn:")),
-    npm: white(bold("         npm:")),
-    oss: white(bold(" Open Source:")),
-    pad: white(bold("             ")),
-    twitter: white(bold("     Twitter:")),
-    web: white(bold("         Web:")),
-    work: white(bold("        Work:")),
+    angel: whiteBold("   AngelList:"),
+    apps: whiteBold("        apps:"),
+    card: whiteBold("        Card:"),
+    code: whiteBold("      Coding:"),
+    domains: whiteBold("     Domains:"),
+    github: whiteBold("      GitHub:"),
+    gmail: whiteBold("       Gmail:"),
+    linkedin: whiteBold("    LinkedIn:"),
+    npm: whiteBold("         npm:"),
+    oss: whiteBold(" Open Source:"),
+    pad: whiteBold("             "),
+    twitter: whiteBold("     Twitter:"),
+    web: whiteBold("         Web:"),
+    work: whiteBold("        Work:"),
   },
 }
 
