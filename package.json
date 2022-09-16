@@ -17,7 +17,7 @@
     "dev": "yarn build && node ./bin/card.js",
     "deploy": "yarn publish --patch",
     "lint": "standard",
-    "open": "npx eswat2"
+    "open": "npx eswat2@latest"
   },
   "keywords": [
     "card",
