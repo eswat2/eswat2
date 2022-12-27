@@ -12,7 +12,7 @@ my npx business card:
 npx eswat2@latest
 ```
 
-[![npm version](https://badge.fury.io/js/eswat2.svg)](//npmjs.com/package/eswat2)
+[![npm version](https://badge.fury.io/js/eswat2.svg)](https://badge.fury.io/js/eswat2)
 
 [![GitHub Streak](http://github-readme-streak-stats.herokuapp.com?user=eswat2&theme=ads-juicy-fresh&hide_border=true&date_format=%5BY.%5Dn.j&background=161B22)](https://git.io/streak-stats)
 
