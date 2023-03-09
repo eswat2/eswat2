@@ -15,6 +15,7 @@
     "build": "node build.mjs",
     "test": "mocha",
     "dev": "yarn build && node ./bin/card.js",
+    "predeploy": "yarn dev",
     "deploy": "yarn publish --patch",
     "lint": "standard",
     "open": "npx eswat2@latest"
