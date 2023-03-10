@@ -22,7 +22,7 @@ const tags = [
   "work",
   "oss",
   "gmail",
-  "twitter",
+  "mastodon",
   "npm",
   "github",
   "linkedin",
@@ -50,8 +50,8 @@ socialData.work.push(white("Lead Technical Architect - UI"))
 socialData.work.push(white("Lead Software Engineer - UI"))
 socialData.work.push(white("UX/UI Engineering"))
 socialData.gmail.push(cyan("eswat2") + gray("@gmail.com"))
-socialData.gmail.push(cyan("eswat42") + gray("@gmail.com"))
-socialData.twitter.push(gray("https://twitter.com/") + cyan("eswat2"))
+socialData.mastodon.push(gray("https://me.dm/") + cyan("@eswat2"))
+socialData.mastodon.push(gray("https://mstdn.social/") + cyan("@eswat42"))
 socialData.npm.push(gray("https://npmjs.com/~") + cyan("eswat2"))
 socialData.github.push(gray("https://github.com/") + cyan("eswat2"))
 socialData.github.push(gray("https://") + cyan("eswat2") + gray(".github.io"))
@@ -97,10 +97,10 @@ const data = {
     github: whiteBold("      GitHub:"),
     gmail: whiteBold("       Gmail:"),
     linkedin: whiteBold("    LinkedIn:"),
+    mastodon: whiteBold("    Mastodon:"),
     npm: whiteBold("         npm:"),
     oss: whiteBold(" Open Source:"),
     pad: whiteBold("             "),
-    twitter: whiteBold("     Twitter:"),
     web: whiteBold("         Web:"),
     work: whiteBold("        Work:"),
   },
