@@ -35,7 +35,7 @@
     "bin/output"
   ],
   "devDependencies": {
-    "boxen": "7.0.2",
+    "boxen": "7.1.0",
     "mocha": "10.2.0",
     "picocolors": "1.0.0",
     "sinon": "15.0.4",
