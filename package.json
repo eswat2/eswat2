@@ -39,6 +39,6 @@
     "mocha": "10.2.0",
     "picocolors": "1.0.0",
     "sinon": "15.1.0",
-    "standard": "17.0.0"
+    "standard": "17.1.0"
   }
 }
