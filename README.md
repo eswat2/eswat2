@@ -14,10 +14,10 @@ npx eswat2@latest
 
 [![npm version](https://badge.fury.io/js/eswat2.svg)](https://badge.fury.io/js/eswat2)
 
-[![GitHub Streak](http://github-readme-streak-stats-umber-sigma.vercel.app?user=eswat2&theme=ads-juicy-fresh&hide_border=true&date_format=%5BY.%5Dn.j&background=161B22)](https://git.io/streak-stats)
+[![GitHub Streak][my-stats]](https://git.io/streak-stats)
 
 
-[my-github]: https://eswat2.github.io
 [my-abstract]: https://eswat2.github.io/images/Vehicles-McLaren-l.jpg
-
+[my-github]: https://eswat2.github.io
+[my-stats]: http://github-readme-streak-stats-umber-sigma.vercel.app?user=eswat2&theme=ads-juicy-fresh&hide_border=true&date_format=%5BY.%5Dn.j&background=161B22
 
