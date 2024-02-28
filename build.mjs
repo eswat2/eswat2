@@ -103,7 +103,7 @@ const data = {
     npm: whiteBold("         npm:"),
     oss: whiteBold(" Open Source:"),
     pad: whiteBold("             "),
-    title: whiteBold("       Title:"),
+    title: whiteBold("       title:"),
     web: whiteBold("         Web:"),
     work: whiteBold("        Work:"),
   },
