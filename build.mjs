@@ -19,6 +19,7 @@ const boxOptions = {
 
 // NOTE:  the order of these define the order they are printed in the card...
 const tags = [
+  "title",
   "work",
   "oss",
   "gmail",
@@ -45,6 +46,7 @@ const socialData = tags.reduce((obj, tag) => {
 //
 // NOTE:  you push your specific data into the socialData arrays...
 //
+socialData.title.push(green("Principle Architect"))
 socialData.work.push(white("Portfolio Technical Architect - UI/UX"))
 socialData.work.push(white("Lead Technical Architect - UI"))
 socialData.work.push(white("Lead Software Engineer - UI"))
@@ -101,6 +103,7 @@ const data = {
     npm: whiteBold("         npm:"),
     oss: whiteBold(" Open Source:"),
     pad: whiteBold("             "),
+    title: whiteBold("       Title:"),
     web: whiteBold("         Web:"),
     work: whiteBold("        Work:"),
   },
