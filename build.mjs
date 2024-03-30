@@ -46,7 +46,7 @@ const socialData = tags.reduce((obj, tag) => {
 //
 // NOTE:  you push your specific data into the socialData arrays...
 //
-socialData.title.push(green("Principle Architect"))
+socialData.title.push(green("Principal Architect"))
 socialData.work.push(white("Portfolio Technical Architect - UI/UX"))
 socialData.work.push(white("Lead Technical Architect - UI"))
 socialData.work.push(white("Lead Software Engineer - UI"))
