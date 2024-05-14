@@ -37,7 +37,7 @@
   "devDependencies": {
     "boxen": "7.1.1",
     "mocha": "10.4.0",
-    "picocolors": "1.0.0",
+    "picocolors": "1.0.1",
     "sinon": "17.0.2",
     "standard": "17.1.0"
   }
