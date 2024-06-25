@@ -1,6 +1,6 @@
 {
   "name": "eswat2",
-  "version": "2.1.196",
+  "version": "2.1.197",
   "description": "A personal card for Richard Hess (@eswat2)",
   "main": "/bin/card.js",
   "bin": {
