@@ -84,6 +84,7 @@ socialData.apps.push(magenta("https://sudoku-sld.vercel.app"))
 socialData.apps.push(magenta("https://wc-autos.vercel.app"))
 socialData.apps.push(magenta("https://wc-funnel.vercel.app"))
 socialData.apps.push(magenta("https://wc-sudoku.vercel.app"))
+socialData.apps.push(magenta("https://wc-xplor.vercel.app"))
 
 const data = {
   name: whiteBold("Richard Hess"),
