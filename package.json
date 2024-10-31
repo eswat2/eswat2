@@ -1,6 +1,6 @@
 {
   "name": "eswat2",
-  "version": "2.1.214",
+  "version": "2.1.215",
   "description": "A personal card for Richard Hess (@eswat2)",
   "main": "/bin/card.js",
   "bin": {
@@ -36,7 +36,7 @@
   ],
   "devDependencies": {
     "boxen": "8.0.1",
-    "mocha": "10.8.1",
+    "mocha": "10.8.2",
     "picocolors": "1.1.1",
     "sinon": "19.0.2",
     "standard": "17.1.2"
