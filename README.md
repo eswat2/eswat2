@@ -2,7 +2,7 @@
 
 ## Richard Hess
 
-Experienced software developer with a passion for creating User Interfaces (_Atomic Design, Stencil, Svelte, Vue, React, GraphQL_). I am currently working as a **Portfolio Technical Architect** for UI/UX, exploring Micro Frontend architectures & technologies.
+Experienced software developer with a passion for creating User Interfaces (_Atomic Design, Stencil, Svelte, Vue, React, GraphQL_). I am currently working as a **Principal Technical Architect** for UI/UX, exploring AI and Micro Frontend architectures & technologies.
 
 - [My Github Page][my-github] **
 
