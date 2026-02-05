@@ -11,12 +11,13 @@
     "url": "https://github.com/eswat2/eswat2.git"
   },
   "scripts": {
-    "prepare": "yarn build",
+    "bump": "bumpp patch --yes",
+    "card": "node ./bin/card.js",
+    "release": "pnpm bump && pnpm build && pnpm card && pnpm publish",
+    "preinstall": "npx only-allow pnpm",
     "build": "node build.mjs",
     "test": "mocha",
-    "dev": "yarn build && node ./bin/card.js",
-    "predeploy": "yarn dev",
-    "deploy": "yarn publish --patch",
+    "dev": "pnpm build && pnpm card",
     "lint": "standard",
     "open": "npx eswat2@latest"
   },
@@ -34,11 +35,17 @@
     "bin/card.js",
     "bin/output"
   ],
+  "dependencies": {
+
+  },
   "devDependencies": {
     "boxen": "8.0.1",
+    "bumpp": "10.4.0",
     "mocha": "11.7.5",
+    "only-allow": "1.2.2",
     "picocolors": "1.1.1",
     "sinon": "21.0.1",
-    "standard": "17.1.2"
+    "standard": "17.1.2",
+    "yoctocolors": "2.1.2"
   }
 }
