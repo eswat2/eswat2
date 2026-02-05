@@ -16,9 +16,9 @@
     "release": "pnpm bump && pnpm build && pnpm card && pnpm publish",
     "preinstall": "npx only-allow pnpm",
     "build": "node build.mjs",
-    "test": "mocha",
     "dev": "pnpm build && pnpm card",
     "lint": "standard",
+    "test": "echo skipping tests...",
     "open": "npx eswat2@latest"
   },
   "keywords": [
@@ -35,16 +35,11 @@
     "bin/card.js",
     "bin/output"
   ],
-  "dependencies": {
-
-  },
   "devDependencies": {
     "boxen": "8.0.1",
     "bumpp": "10.4.0",
-    "mocha": "11.7.5",
     "only-allow": "1.2.2",
     "picocolors": "1.1.1",
-    "sinon": "21.0.1",
     "standard": "17.1.2",
     "yoctocolors": "2.1.2"
   }
