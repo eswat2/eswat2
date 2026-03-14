@@ -4,7 +4,7 @@ import { red, green } from 'yoctocolors'
 
 export default defineConfig({
   commit: true,
-  release: 'patch',
+  patch: true,
   tag: true,
   push: true,
 
