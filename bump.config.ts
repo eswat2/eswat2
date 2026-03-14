@@ -6,7 +6,7 @@ export default defineConfig({
   all: true,
 
   // this runs *after* bumpp has updated the version (but before commit/tag)
-  execute: "echo crap"
+  execute: "echo crap",
 
   foobar: async (ctx) => {
     console.log(ctx)
