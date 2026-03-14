@@ -3,10 +3,7 @@ import { defineConfig } from 'bumpp'
 import { red, green } from 'yoctocolors'
 
 export default defineConfig({
-  commit: true,
-  patch: true,
-  tag: true,
-  push: true,
+  all: true,
 
   // this runs *after* bumpp has updated the version (but before commit/tag)
   execute: async (ctx) => {
