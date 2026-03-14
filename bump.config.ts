@@ -8,7 +8,7 @@ export default defineConfig({
   push: true,
 
   // this runs *after* bumpp has updated the version (but before commit/tag)
-  async execute(ctx) {
+  execute: async (ctx) => {
     console.log(ctx)
     const op = ctx as any
     const oldVersion = op.state?.currentVersion
