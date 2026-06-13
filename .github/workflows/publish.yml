@@ -13,7 +13,6 @@ jobs:
       node-version: '22'
       run-tests: true
       run-build: true
-      run-card: true   # or false if no card script
-      publish-command: 'npm publish --access public'
-    secrets:
-      NPM_PUBLISH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
+      run-card: true          # or false if no card script
+      publish-command: 'npm publish --access public --provenance'
+    # no secrets: NPM_PUBLISH_TOKEN here
