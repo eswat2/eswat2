@@ -38,7 +38,7 @@
   ],
   "devDependencies": {
     "boxen": "8.0.1",
-    "bumpp": "12.2.1",
+    "bumpp": "12.2.2",
     "only-allow": "1.2.2",
     "picocolors": "1.1.1",
     "standard": "17.1.2",
