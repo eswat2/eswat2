@@ -7,4 +7,5 @@ allowBuilds:
   'proto-tailwindcss-clrs': true
 
 minimumReleaseAgeExclude:
-  - bumpp@12.3.0
+  - boxen@9.0.0
+  - wrap-ansi@10.0.2
