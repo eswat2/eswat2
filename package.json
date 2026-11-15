@@ -10,7 +10,6 @@
     "type": "git",
     "url": "git+https://github.com/eswat2/eswat2.git"
   },
-  "packageManager": "pnpm@12.18.0",
   "scripts": {
     "bump": "bumpp patch --commit --tag --push --yes",
     "card": "node ./bin/card.js",
