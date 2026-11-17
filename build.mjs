@@ -80,7 +80,7 @@ socialData.site.push(yellow("https://mcp.eswat2.app/intro"))
 socialData.site.push(yellow("https://poker.eswat2.app/about"))
 socialData.site.push(yellow("https://retro.eswat2.app/about"))
 socialData.site.push(yellow("https://sudoku.eswat2.app/about"))
-// socialData.app.push(yellow("https://sudoku.eswat2.app/api/puzzle"))
+// socialData.app.push(yellow("https://sudoku.eswat2.app/api-sample"))
 
 socialData.apps.push(magenta("https://wc-autos.vercel.app"))
 socialData.apps.push(magenta("https://wc-funnel.vercel.app"))
