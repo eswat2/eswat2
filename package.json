@@ -11,9 +11,9 @@
     "url": "git+https://github.com/eswat2/eswat2.git"
   },
   "scripts": {
-    "bump": "bumpp patch --commit --tag --push --yes",
+    "bump": "bumpp patch --all --commit --tag --push --yes",
     "card": "node ./bin/card.js",
-    "release": "pnpm bump && pnpm build && pnpm card",
+    "release": "pnpm build && pnpm card && pnpm bump",
     "preinstall": "npx only-allow pnpm",
     "build": "node build.mjs",
     "dev": "pnpm build && pnpm card",
