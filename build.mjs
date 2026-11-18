@@ -34,6 +34,11 @@ const tags = [
   "web",
   "site",
   "apps",
+  "solid",
+  "svelte",
+  "vue",
+  "stencil",
+  "lit",
   "app",
 ]
 
@@ -82,10 +87,10 @@ socialData.site.push(yellow("https://retro.eswat2.app/about"))
 socialData.site.push(yellow("https://sudoku.eswat2.app/about"))
 // socialData.app.push(yellow("https://sudoku.eswat2.app/api-sample"))
 
-socialData.apps.push(magenta("https://wc-autos.vercel.app"))
-socialData.apps.push(magenta("https://wc-funnel.vercel.app"))
-socialData.apps.push(magenta("https://wc-sudoku.vercel.app"))
-socialData.apps.push(magenta("https://wc-xplor.vercel.app"))
+socialData.solid.push(magenta("https://autos-sld.vercel.app"))
+socialData.solid.push(magenta("https://funnel-sld.vercel.app"))
+socialData.solid.push(magenta("https://sudoku-sld.vercel.app"))
+socialData.solid.push(magenta("https://tinker-sld.vercel.app"))
 
 const data = {
   name: whiteBold("Richard Hess"),
@@ -102,13 +107,18 @@ const data = {
     github: whiteBold("      gitHub:"),
     email: whiteBold("       email:"),
     linkedin: whiteBold("    linkedIn:"),
+    lit: whiteBold("         lit:"),
     mastodon: whiteBold("    mastodon:"),
     npm: whiteBold("         npm:"),
     oss: whiteBold(" open source:"),
     pad: whiteBold("             "),
     resume: whiteBold("      resume:"),
     site: whiteBold("        site:"),
+    solid: whiteBold("       solid:"),
+    stencil: whiteBold("     stencil:"),
+    svelte: whiteBold("      svelte:"),
     title: whiteBold("       title:"),
+    vue: whiteBold("         vue:"),
     web: whiteBold("         web:"),
     work: whiteBold("        work:"),
   },
